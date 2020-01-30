@@ -1,8 +1,5 @@
 #ssh
-alias ssh-chubby="ssh -A wentaoc@chubby.eecs.umich.edu"
-alias ssh-tubby="ssh -A wentaoc@tubby.eecs.umich.edu"
-alias ssh-vultr="ssh -A root@140.82.18.9"
-alias ssh-tencent="ssh -A ubuntu@118.24.75.137"
+
 
 # build
 alias make="make -j$(nproc)"
