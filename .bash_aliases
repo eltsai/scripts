@@ -1,6 +1,11 @@
 #ssh
+alias ssh-chubby="ssh -A wentaoc@chubby.eecs.umich.edu"
+alias ssh-tubby="ssh -A wentaoc@tubby.eecs.umich.edu"
+alias ssh-vultr="ssh -A root@140.82.18.9"
+alias ssh-tencent="ssh -A ubuntu@118.24.75.137"
+alias ssh-bastion="ssh -A wentaoc@bastion.eecs.umich.edu"
 
-
+alias tencent-server='ubuntu@118.24.75.137'
 # build
 alias make="make -j$(nproc)"
 alias scons="scons -j$(nproc)"
@@ -24,6 +29,7 @@ alias hg="history | grep"
 alias mvv="mv -v"
 alias rmv="rm -vi"
 alias cpv="cp -v"
+alias lsl="ls -tharl"
 pkgg() { dpkg -l | grep "$1" | awk '{print $2}'; }
 
 
