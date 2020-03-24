@@ -1,11 +1,5 @@
-#ssh
-alias ssh-chubby="ssh -A wentaoc@chubby.eecs.umich.edu"
-alias ssh-tubby="ssh -A wentaoc@tubby.eecs.umich.edu"
-alias ssh-vultr="ssh -A root@140.82.18.9"
-alias ssh-tencent="ssh -A ubuntu@118.24.75.137"
-alias ssh-bastion="ssh -A wentaoc@bastion.eecs.umich.edu"
+# ssh
 
-alias tencent-server='ubuntu@118.24.75.137'
 # build
 alias make="make -j$(nproc)"
 alias scons="scons -j$(nproc)"
@@ -22,7 +16,7 @@ alias gac="git add . && git commit -a -m"
 alias ggrep="git grep"
 
 # simplifying
-alias open="nautilus"
+alias open="xdg-open"
 alias untar="tar -zxvf"
 alias c="clear"
 alias hg="history | grep"
@@ -34,4 +28,3 @@ pkgg() { dpkg -l | grep "$1" | awk '{print $2}'; }
 
 
 
-alias hi="printf \"Hi Elisa!\nToday is $(date)\nGet your work down!\n\" | lolcat"
