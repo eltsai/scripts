@@ -1,10 +1,15 @@
 #!/bin/bash
 
 gnome-screensaver-command -l
-while [ 1 ]
-do
-	xdotool sleep 1 key Ctrl
-done
+
+if [ "$1" == "" ]; then
+	echo "showing my cats"
+    while [ 1 ]
+	do
+		xdotool sleep 1 key Ctrl
+	done
+fi
+
 
 # In Settings -> Devices -> Keyboard
 # Add new shortcut
