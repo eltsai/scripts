@@ -24,6 +24,7 @@ alias mvv="mv -v"
 alias rmv="rm -vi"
 alias cpv="cp -v"
 alias lsl="ls -tharl"
+alias sshot="gnome-screenshot -a -f"
 pkgg() { dpkg -l | grep "$1" | awk '{print $2}'; }
 
 
