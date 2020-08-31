@@ -1,3 +1,3 @@
 #!/bin/sh
 
-find $1 -name '*.deb' -delete
+find $1 -name '*.deb|*.tar.xz' -delete
