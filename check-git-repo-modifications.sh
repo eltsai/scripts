@@ -1,4 +1,6 @@
 #!/bin/bash
+#checking all git repo modifications under $HOME/Projects
+#author: eltsai
 
 skip=(cooldown nda-plus-plus nCovMemory CPU-vulnerability-notes blog-source USTC_CG2020 naive-inits)
 dir=$(pwd)
