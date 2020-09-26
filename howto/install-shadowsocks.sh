@@ -15,5 +15,25 @@ bash shadowsocks.sh
 pip install shadowsocks
 sudo sslocal -c ss.json -d start
 
+# server-side:
+vim /etc/shadowsocks-libev/config.json
+# run 
+sslocal &
+# run shadowsocks server as systemd service:
+
+# [Unit]
+# Description=Shadowsocks Server
+# After=network.target
+# [Service]
+# ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/ss-config.json
+# Restart=on-abort
+# [Install]
+# WantedBy=multi-user.target
+
+# copy this file to /etc/systemd/system/shadowsocks-server.service
+systemctl enable shadowsocks-server
+systemctl start shadowsocks-server
+
 # install proxychains
-# https://echohn.github.io/2016/05/29/to-build-the-fullstack-tools-for-over-the-wall/
+sudo apt install proxychains4
+sudo vim /etc/proxychains4.conf
