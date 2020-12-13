@@ -1,0 +1,12 @@
+% For commenting
+\usepackage{color}
+\usepackage{ifthen}
+\newboolean{publicversion}
+\setboolean{publicversion}{false}
+\ifthenelse{\boolean{publicversion}}{
+    \newcommand{\name1}[1]{}
+    \newcommand{\name2}[1]{}
+ }{
+    \newcommand{\name1}[1]{\textbf{\color{green}[name1: #1]}}
+    \newcommand{\name2}[1]{\textbf{\color{blue}[name2: #1]}}
+}
