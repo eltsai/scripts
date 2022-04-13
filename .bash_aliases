@@ -14,6 +14,7 @@ alias ga="git add -A"
 alias gcm="git commit -m"
 alias gac="git add . && git commit -a -m"
 alias ggrep="git grep"
+alias gwhere="git rev-parse --abbrev-ref HEAD"
 
 # simplifying
 alias open="xdg-open"
