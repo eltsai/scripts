@@ -15,6 +15,7 @@ alias gcm="git commit -m"
 alias gac="git add . && git commit -a -m"
 alias ggrep="git grep"
 alias gwhere="git rev-parse --abbrev-ref HEAD"
+alias gcatchup="git fetch origin; git merge origin/master"
 
 # simplifying
 alias open="xdg-open"
