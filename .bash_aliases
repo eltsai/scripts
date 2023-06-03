@@ -27,6 +27,11 @@ alias rmv="rm -vi"
 alias cpv="cp -v"
 alias lsl="ls -tharl"
 alias sshot="gnome-screenshot -a -f"
+alias evenv="source venv/bin/activate"
+#GSOC
+alias riotpot-up='sudo docker-compose -p riotpot -f build/docker/docker-compose.yaml up -d --build'
+alias riotpot-down='sudo docker-compose -p riotpot -f build/docker/docker-compose.yaml down'
+
 pkgg() { dpkg -l | grep "$1" | awk '{print $2}'; }
 
 
