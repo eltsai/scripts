@@ -31,7 +31,7 @@ alias evenv="source venv/bin/activate"
 #GSOC
 alias riotpot-up='sudo docker-compose -p riotpot -f build/docker/docker-compose.yaml up -d --build'
 alias riotpot-down='sudo docker-compose -p riotpot -f build/docker/docker-compose.yaml down'
-
+alias clean-docker='sudo docker system prune -a'
 pkgg() { dpkg -l | grep "$1" | awk '{print $2}'; }
 
 
