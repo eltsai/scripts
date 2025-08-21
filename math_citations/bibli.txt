@@ -1,0 +1,13 @@
+@article {MR3094435,
+    AUTHOR = {Shulman, Michael},
+     TITLE = {Enriched indexed categories},
+   JOURNAL = {Theory Appl. Categ.},
+  FJOURNAL = {Theory and Applications of Categories},
+    VOLUME = {28},
+      YEAR = {2013},
+     PAGES = {616--696},
+      ISSN = {1201-561X},
+   MRCLASS = {18D20 (18D10)},
+  MRNUMBER = {3094435},
+MRREVIEWER = {Philippe\ Gaucher},
+}
